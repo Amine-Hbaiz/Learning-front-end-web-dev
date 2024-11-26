@@ -16,14 +16,14 @@
   <body>
     <main id="main" class="container">
         <h1 class="h1" id="title">
-          Juice WRLD Tribute Page by Amine H
+          Juice WRLD Tribute Page <span>by Amine H</span>
         </h1>
         <h3 class="h3" id="title">
           999
         </h3>
       <figure id="img-div">
         <img id="image" src="https://th.bing.com/th/id/R.99073bf4c503974abc3f36526bf3e5fb?rik=8EXOtA1Zqs2fdA&pid=ImgRaw&r=0" alt="Juice WRLD">
-        <figcaption id="img-caption">Juice Wrld performing in 2019</figcaption>
+        <figcaption id="img-caption">Juice Wrld's picture in 2019</figcaption>
       </figure>
       <div id="tribute-info">
         <h2 class="h2" id="title">Here's the timeline of juice wrld's life</h2>
@@ -49,10 +49,10 @@
         </ol>
       </div>
       <div class="rip">
-        R.I.P
+        R.I.P 🪦
       </div>
       <footer class="h2">
-      <p = "footer">If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Juice_Wrld" target="_blank">Wikipedia entry.</p>
+      <p = "footer">If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Juice_Wrld" target="_blank">Wikipedia page.</p>
     </footer>
     </main>
     
@@ -75,6 +75,15 @@
   padding: 10px;
 }
 
+h1 {
+  font-size: 50px;
+  font-style: oblique;
+}
+
+span {
+  font-size: 30px;
+}
+
 .h3 {
   font-weight: 200;
   padding-bottom: 10px;
@@ -83,7 +92,7 @@
 #img-div {
   background-image: linear-gradient(200deg,hsl(266, 59%, 73%), hsl(274, 36%, 48%));
   border-radius: 15px;
-  padding: 10px;
+  padding: 90px;
 }
 
 #image {
@@ -118,6 +127,7 @@ img:hover {
 #img-caption {
   color: white;
   text-align: center;
+  padding-top: 10px;
 }
 
 #title, .rip, footer {
