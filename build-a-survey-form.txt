@@ -1,0 +1,64 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="My first form">
+    <meta name="keywords" content="form, CSS, html">
+    <meta name="author" content="Amine Hbaiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  </head>
+    <body>
+      <h1 id="title">My Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve (...)</p>
+      <form id="survey-form">
+
+        <label for="name" id="name-label" >Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your Email" required/>
+
+        <label for="number" id="number-label">Age<span id="optional">(optional)</span></label>
+        <input id="number" type="number" min="18" max="120" placeholder="Age" required/>
+
+        <select id="dropdown" placeholder="Select current option" required>
+          <option value="" disabled selected>Select your option</option>
+          <option>
+            Option 1
+          </option>
+          <option>
+            Option 2
+          </option>
+        </select>
+        
+        <p>Choose one option:</p>
+        <input type="radio" name="choose_one_option" value="radio 1"/>radio 1<label for="choose_one_option"></label>
+        <input type="radio" name="choose_one_option" value="radio 2"/>radio 2<label for="choose_one_option"></label>
+
+        <p>Check atleast one option:<span>(Check all that apply)</span></p>
+        <input type="checkbox" name="check_one_option" value="checkbox 1"/>checkbox 1<label for="check_one_option"></label>
+        <input type="checkbox" name="check_one_option" value="checkbox 2"/>checkbox 2<label for="check_one_option"></label>
+        <input type="checkbox" name="check_one_option" value="checkbox 3"/>checkbox 3<label for="check_one_option"></label>
+
+        <label for="textarea">Review:</label>
+        <textarea id="textarea" name="textarea" rows="6" cols="50" placeholder="Enter your comment here..."></textarea>
+
+        <input id= "submit" type="submit" value="Submit"/>
+
+      </form>
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
