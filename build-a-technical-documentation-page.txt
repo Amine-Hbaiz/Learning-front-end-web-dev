@@ -440,7 +440,6 @@ return number * number;
 
 :root {
   box-sizing: border-box;
-  
 }
 
 html, body {
@@ -455,7 +454,8 @@ html, body {
   list-style-type: none;
   
 }
-#navbar{
+
+#navbar {
   position: fixed;
   min-width: 290px;
   top: 0px;
@@ -485,8 +485,6 @@ nav {
     position: absolute;
     margin-left: 310px;
 }
-
-
 
 a {
     text-decoration: none; 
