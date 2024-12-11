@@ -1,5 +1,3 @@
-** start of undefined **
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,9 +104,7 @@
 </body>
 </html>
 
-** end of undefined **
 
-** start of undefined **
 
 :root {
   --neflix-red: hsl(353, 93%, 39%);
@@ -314,6 +310,3 @@ color: darkblue;
     flex-direction: column; 
   }
 }
-
-** end of undefined **
-
