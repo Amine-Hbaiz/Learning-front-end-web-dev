@@ -1,0 +1,178 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Juice WRLD Tribute Page by Amine H</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="A simple tribute page for our lost artist juice wrld">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="John Doe">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main id="main" class="container">
+        <h1 class="h1" id="title">
+          Juice WRLD Tribute Page <span>by Amine H</span>
+        </h1>
+        <h3 class="h3" id="title">
+          999
+        </h3>
+      <figure id="img-div">
+        <img id="image" src="https://th.bing.com/th/id/R.99073bf4c503974abc3f36526bf3e5fb?rik=8EXOtA1Zqs2fdA&pid=ImgRaw&r=0" alt="Juice WRLD">
+        <figcaption id="img-caption">Juice Wrld's picture in 2019</figcaption>
+      </figure>
+      <div id="tribute-info">
+        <h2 class="h2" id="title">Here's the timeline of juice wrld's life</h2>
+        <ol id="events" class="spooky-list">
+          <li>
+            <strong>1998:</strong> Juice Wrld (Jarad Higgins) was born on December 2 in Chicago, Illinois.
+          </li>
+          <li>
+            <strong>2015-2017:</strong> Began sharing music on SoundCloud during high school under "JuicetheKidd."
+          </li>
+          <li>
+            <strong>2018:</strong> Released hit single "Lucid Dreams," launching him to stardom.
+          </li>
+          <li>
+            <strong>2018-2019:</strong> Debut album Goodbye & Good Riddance and second album Death Race for Love gained commercial success.
+          </li>
+          <li>
+            <strong>2019:</strong> Passed away on December 8 from a drug-related seizure at Chicago's Midway Airport.
+          </li>
+          <li>
+            <strong>2020-present:</strong> Posthumous releases, including Legends Never Die, cemented his legacy.
+          </li>
+        </ol>
+      </div>
+      <div class="rip">
+        R.I.P 🪦
+      </div>
+      <footer class="h2">
+      <p = "footer">If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Juice_Wrld" target="_blank">Wikipedia page.</p>
+    </footer>
+    </main>
+    
+  </body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: hsl(360, 55%, 65%);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-style: oblique;
+}
+
+span {
+  font-size: 30px;
+}
+
+.h3 {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+#img-div {
+  background-image: linear-gradient(200deg,hsl(266, 59%, 73%), hsl(274, 36%, 48%));
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display : block;
+  margin: auto;
+  border-radius: 10px;
+   
+}
+
+img:hover {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+  box-shadow:  1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#img-caption {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#title, .rip, footer {
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto Slab', serif; 
+}
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+ol.spooky-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+
+}
+
+ol.spooky-list li {
+  position: relative;
+  padding-left: 40px;
+  margin: 10px 50px;
+  color: #f5f5f5;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1em;
+  text-shadow: 2px 2px 4px #000;
+  display: inline-block;
+}
+
+ol.spooky-list li:before {
+  content: "\1F608";
+  position: absolute;
+  left: 0;
+  color: #ff4d4d;
+  font-size: 1.5em;
+}
+
+
+footer {
+    margin-top: 50px;
+    font-size: 1.2rem ;
+}
+
+** end of undefined **
+
