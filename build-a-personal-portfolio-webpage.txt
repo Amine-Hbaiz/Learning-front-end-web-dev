@@ -1,5 +1,3 @@
-** start of undefined **
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,25 +28,25 @@
         <div class="projects-grid">
             <div class="project-tile">
                 <a href="https://github.com/Amine-Hbaiz/Learning-front-end-web-dev/blob/main/build-a-technical-documentation-page.txt" target="_blank">
-                    <img src="/api/placeholder/400/300" alt="Project 1">
+                    <img src="tech-doc-js.png" alt="Project 1">
                     <p>Technical Documentation Page</p>
                 </a>
             </div>
             <div class="project-tile">
                 <a href="https://github.com/Amine-Hbaiz/Learning-front-end-web-dev/blob/main/build-a-survey-form.txt" target="_blank">
-                    <img src="/api/placeholder/400/300" alt="Project 2">
+                    <img src="survey-form.png" alt="Project 2">
                     <p>Survey Form</p>
                 </a>
             </div>
             <div class="project-tile">
                 <a href="https://github.com/Amine-Hbaiz/Learning-front-end-web-dev/blob/main/build-a-tribute-page.txt" target="_blank">
-                    <img src="/api/placeholder/400/300" alt="Project 3">
+                    <img src="tribute-pg.png" alt="Project 3">
                     <p>Tribute Page</p>
                 </a>
             </div>
              <div class="project-tile">
                 <a href="https://github.com/Amine-Hbaiz/Learning-front-end-web-dev/blob/main/build-a-product-landing-page.txt" target="_blank">
-                    <img src="/api/placeholder/400/300" alt="Project 3">
+                    <img src="Product-landing-pg.png" alt="Project 3">
                     <p>Product Landing Page</p>
                 </a>
             </div>
@@ -75,9 +73,7 @@
 </body>
 </html>
 
-** end of undefined **
 
-** start of undefined **
 
 :root {
     --navbar-darkerblue: #3498db;
@@ -233,7 +229,7 @@ body {
 
 .project-tile img {
     width: 100%;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -250,6 +246,7 @@ body {
     font-weight: bold;
     background: linear-gradient(to right, var(--navbar-darkerblue), var(--accent-purple));
     color: var(--text);
+    border-radius: 15px;
 }
 
 /* Contact Section */
@@ -309,6 +306,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-** end of undefined **
-
