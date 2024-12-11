@@ -1,5 +1,3 @@
-** start of undefined **
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -54,9 +52,8 @@
     </body>
 </html>
 
-** end of undefined **
 
-** start of undefined **
+
 
 :root {
     --primary-color: #3498db;
@@ -223,6 +220,3 @@ textarea {
 #survey-form {
     animation: fadeIn 0.5s ease-out;
 }
-
-** end of undefined **
-
