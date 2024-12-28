@@ -1,0 +1,234 @@
+:root {
+    --navbar-darkerblue: #3498db;
+    --welcome-darkblue: #2980b9;
+    --hover-lightblue: #f1c40f;
+    --projects-lightgray: lightblue;
+    --text: white;
+    --accent-green: #2ecc71;
+    --accent-purple: #9b59b6;
+    --background-light: #ecf0f1;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--background-light);
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--navbar-darkerblue);
+    color: var(--text);
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 20px;
+}
+
+#navbar ul li a {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: var(--hover-lightblue);
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--welcome-darkblue), var(--accent-green));
+    color: var(--text);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#welcome-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 50px,
+        rgba(255,255,255,0.05) 50px,
+        rgba(255,255,255,0.05) 100px
+    );
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    color: var(--hover-lightblue);
+    z-index: 1;
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--navbar-darkerblue);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#projects h2 {
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-tile {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-green);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.project-tile:hover img {
+    filter: brightness(1.1);
+}
+
+.project-tile p {
+    padding: 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--navbar-darkerblue), var(--accent-purple));
+    color: var(--text);
+    border-radius: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, var(--accent-green), var(--navbar-darkerblue));
+    color: var(--text);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contact-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.contact-links a:hover {
+    background-color: var(--hover-lightblue);
+    color: #333;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, var(--navbar-darkerblue), var(--accent-purple));
+    color: var(--text);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    #navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #navbar ul li {
+        margin: 5px 10px;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.3rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+** end of undefined **
+
