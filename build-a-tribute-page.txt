@@ -1,5 +1,3 @@
-** start of undefined **
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -60,9 +58,9 @@
 
 </html>
 
-** end of undefined **
 
-** start of undefined **
+
+
 
 * {
   margin: 5px;
@@ -173,6 +171,3 @@ footer {
     margin-top: 50px;
     font-size: 1.2rem ;
 }
-
-** end of undefined **
-
