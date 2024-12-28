@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border:0;
+}
+
+body {
+  background-color: lightblue;
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.6;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.palindrome-div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: min(100vw, 450px);
+  justify-content: center;
+  flex-wrap:wrap;
+  box-shadow: 0 6px 6px black;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+div {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.resluts-div {
+  margin: 0;
+  padding:0;
+
+}
+
+.palindrome-text {
+  border-bottom: 2px solid hotpink;
+  width: 70%;
+  height: 25px;
+}
+
+.resluts-div hidden {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 26px;
+
+}
+
+label {
+  letter-spacing: 1.5px;
+  font-weight: 100
+}
+
+.palindrome-btn {
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin:8px;
+  background: hotpink;
+  font-weight: bold;
+  color: white;
+}
+
+.palindrome-definition-div {
+  display:flex;
+  width: min(100vw, 450px);
+  min-height: 100px;
+  background: hotpink;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+** end of undefined **
+
+** start of undefined **
+
+const checkBtn = document.querySelector('#check-btn');
+const inputText = document.querySelector('#text-input');
+const resultInputText = document.querySelector('#result')
+const spanResult = document.querySelector('#resultSpan');
+
+function isPalindrome(str) {
+  const cleaned = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  return cleaned === cleaned.split('').reverse().join('');
+}
+
+function update(result) {
+  resultInputText.style.visibility = "visible";
+  spanResult.innerText = result;
+}
+
+checkBtn.addEventListener('click',  function () {
+const inputValue = inputText.value.trim();
+  if(inputValue === '') {
+    alert('Please input a value');
+    inputText.focus();
+    return false;
+  } 
+  
+  if (isPalindrome(inputValue)) {
+    update(`${inputValue} is a palindrome.`);
+  } else {
+    update(`${inputValue} is not a palindrome.`);
+  }
+});
